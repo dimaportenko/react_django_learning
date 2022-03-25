@@ -25,3 +25,22 @@ yarn-error.log*
 .idea
 
 /frontend/node_modules
+
+.mypy_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django #
+*.log
+*.pot
+*.pyc
+**/__pycache__
+db.sqlite3
+media
