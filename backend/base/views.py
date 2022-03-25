@@ -21,5 +21,16 @@ def getRoutes(request):
     return Response(routes)
 
 
+@api_view(['GET'])
 def getProducts(request):
-    return JsonResponse(products, safe=False)
+    return Response(products)
+
+
+@api_view(['GET'])
+def getProduct(request, pk):
+    product = None
+    for item in products:
+        if item['_id'] == pk:
+            product = item
+            break
+    return Response(product)
