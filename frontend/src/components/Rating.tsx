@@ -8,7 +8,7 @@ const Rating: FC<{
   return (
     <div className="rating">
       {[...Array(5)].map((_, index) => (
-        <span>
+        <span key={index}>
           <i style={{color}} className={
             value >= (index + 1)
               ? 'fas fa-star'
